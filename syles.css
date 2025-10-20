@@ -1,0 +1,155 @@
+/* Basic Reset and Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2rem;
+font-size:25px;
+  background-color: #282c34;
+  color:white;
+}
+
+.certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.certification {
+  background:powderblue;
+
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.textbox {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-left: 4px solid #007BFF;
+  background-color: #f0f8ff;
+}
+
+nav {
+    float: right;
+    display: flex;
+    gap: 50px;
+  }
+
+  nav a {
+    font-weight:bold; font-family: 'Segoe UI', sans-serif;
+    font-size:20px;
+    color: white;
+    text-decoration: none;
+  }
+img
+{
+height:400px;width:400px;text-align:center;
+align-items:center;justify-content:center;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* adjust as needed */
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+  }
+  
+  .portfolio-item {
+    background: powderblue;
+    padding: 20px;
+    
+    dislpay:flex;
+    height:300px;width:300px;text-align:center;display:flex;text-align:center; justify-content: center; /* horizontal center */
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .circle{
+    border-radius:100%;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.skills-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #f9f9f9;
+  width: 220px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform
+
+
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1.5s ease-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
